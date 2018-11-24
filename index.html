@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple PDF Generation Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="src/css/index.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Main Container that will have all the data i.e. form-->
+
+<div class="container">
+    <h3 class="caps center heading">pdf generation demo</h3>
+    <div class="row">
+        <div class="col s12">
+            <form method="GET">
+
+                <div class="input-field col s12 m6">
+                    <input id="user-name" required type="text" autofocus/>
+                    <label for="user-name">enter your name</label>
+                </div>
+
+                <div class="input-field col s12 m6">
+                    <input id="batch-name" required type="text" />
+                    <label for="batch-name">enter your batch</label>
+                </div>
+
+                <div class="input-field col s12 m6">
+                    <input id="user-email" required type="text"/>
+                    <label for="user-email">enter your email</label>
+                </div>
+
+                <div class="input-field col s12 m6">
+                    <input type="text" class="datepicker"  id="dob" required />
+                    <label for="dob">enter your date of birth</label>
+                </div>
+
+                <div class="input-field col s12 m6">
+                    <input id="user-phone" required type="text"/>
+                    <label for="user-phone">enter your phone number</label>
+                </div>
+
+                <div class="input-field col s12 m6">
+                    <input id="user-city" required type="text"/>
+                    <label for="user-city">enter your city name</label>
+                </div>
+                
+                <div class="input-field col s12 m6">
+                    <textarea id="user-address" class="materialize-textarea"></textarea>
+                    <label for="user-address">enter your address</label>
+                </div>
+
+                <div class="input-field col s6">
+                    <select>
+                        <option value="male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                    <label>Select Your Gender</label>
+                </div>
+
+                <div class="file-field input-field col s12">
+                    <div class="btn">
+                        <span>Picture</span>
+                        <input type="file" accept="image/*"/>
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path" type="text"/>
+                    </div>
+                </div>
+
+                <div class="input-field col 12">
+                    <button type="submit" class="waves-effect waves-ligth btn-large">Generate PDF</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="src/pdf-js/jspdf.min.js"></script>
+<script src="src/js/index.js"></script>
+</body>
+</html>
