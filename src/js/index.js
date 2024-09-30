@@ -24,6 +24,7 @@ let generatePdf = () => {
         email : getValue("user-email"),
         dob : getValue("dob"),
         phone : getValue("user-phone"),
+        layer1 : getValue("layer1"),
         location : getValue("user-city"),
         address : getValue("user-address"),
         gender : document.getElementsByTagName("select")[0].selectedOptions[0].value
